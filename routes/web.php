@@ -76,10 +76,11 @@ Route::get('/123/{year}/{yourname?}',function($year,$yourname=null){
         echo('Hello world,'.$year.'.My name is'.$yourname);
     }
 });
-Route::get('/Baitap', function()    
+Route::get('/baitap111', function()    
 {
     return view('index');
 });
+
 Route::group(['prefix' =>'category'], function(){
 
     Route::get('/',[CategoryController::class,'index'])->name('category.index');
